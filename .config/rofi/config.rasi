@@ -1,0 +1,25 @@
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+* {
+	font: "Noto Sans Regular 24";
+}
+window {
+	background-color: #0D0E13;
+	border-color:#AC3231;
+	border: 6;
+}
+element-text {
+	text-color: #AC3231;
+	 // background-color: #0D0E13;
+}
+prompt {
+	text-color: #AC3231;
+}
+entry {
+	text-color: #AC3231;
+	background-color: #383C47;
+}
+element.selected.normal {
+background-color:#5C0120;
+
+}

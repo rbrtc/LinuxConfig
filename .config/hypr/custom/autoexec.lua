@@ -1,0 +1,7 @@
+hl.on("hyprland.start", function()
+	hl.exec_cmd("uwsm app -- udiskie")
+	-- hl.exec_cmd("uwsm app -- swaybg -i /storage/20240514175242_1.jpg")
+	hl.exec_cmd("uwsm app -- swaybg -c 000000")
+	hl.exec_cmd("uwsm app -- copyq --start-server")
+	hl.exec_cmd("uwsm app -- mega-sync")
+end)

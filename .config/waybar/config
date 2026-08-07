@@ -1,0 +1,61 @@
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    // "height": 30, // Waybar height (to be removed for auto height)
+    "margin": "20 20 0 20",
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray","wireplumber","custom/reboot","custom/power"],
+
+
+    //***************************
+    //*  Modules configuration  *
+    //***************************
+
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": [1,2,3,4]
+        },
+    },
+    "clock": {
+    	"format": "{:%A | %OI:%M %p | %D}",
+	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+	"calendar": {
+	    "mode": "month",
+	    "mode-mon-col"  : 3,
+	    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+	},
+	"actions": {
+	    	    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down",
+		    "on-click": "mode",
+		    "on-click-right": "shift_reset"
+	}
+    },
+    "wireplumber": {
+	    "format": "{volume}% {icon}",
+	    "format-muted": "0% ",
+	    "format-icons": ["", "", ""],
+	    "scroll-step": 5.0
+    },
+    "tray": {
+        "icon-size": 32,
+        "spacing": 0,
+    },
+    "custom/reboot": {
+	"format": "",
+	"on-click": "systemctl reboot"
+    },
+    "custom/power": {
+	"format": "",
+    	"on-click": "systemctl poweroff"
+    }
+}

@@ -1,0 +1,21 @@
+[global]
+frame_color = "#AC3231"
+separator_color = frame
+highlight = "#AC3231"
+background = "#0D0E13"
+font = "Liberation Mono 28"
+gap_size = 15
+word_wrap = true
+width = 500
+
+#[urgency_low]
+#background = "#0D0E13"
+#foreground = "#c6d0f5"
+
+#[urgency_normal]
+#background = "#0D0E13"
+#foreground = "#c6d0f5"
+
+[urgency_critical]
+background = "#AC3231"
+frame_color = "#0D0E13"

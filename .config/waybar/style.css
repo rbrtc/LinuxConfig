@@ -1,0 +1,115 @@
+* {
+    border: solid;
+    border-color:#AC3231;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Liberation Mono;
+    min-height: 20px;
+    font-size: 36px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+    margin-right: 8px;
+    transition: none;
+    /* background: #383c4a; */
+    background: #0D0E13;
+    border-width:3px;
+}
+
+#workspaces button {
+    transition: none;
+    /* color: #7c818c; */
+    /* color: #0D0E13; */
+    background: transparent;
+    padding: 10px;
+}
+
+#workspaces button.persistent {
+    color: #7c818c;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button.hover {
+    transition: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: inherit;
+    color: #383c4a;
+    background: #7c818c;
+}
+
+#workspaces button.active {
+    color: #AC3231;
+}
+
+#mode {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
+#clock {
+    padding-left: 16px;
+    padding-right: 16px;
+    /* border-radius: 0px; */
+    transition: none;
+    /* color: #AC3231; */
+    color: grey;
+    background: #0D0E13;
+    border-width:3px;
+}
+
+#wireplumber {
+    padding-left: 16px;
+    padding-right: 40px;
+    color: grey;
+    background: #0D0E13;
+    border-width:3px;
+}
+
+#tray {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 16px;
+    transition: none;
+    color: grey;
+    background: #0D0E13;
+    border-width:3px;
+}
+
+#custom-reboot {
+    padding-left: 16px;
+    padding-right: 28px;
+    margin-left:16px;
+    background: #0D0E13;
+    border-width:3px;
+    color: grey;
+
+}
+
+#custom-power {
+    padding-left: 16px;
+    padding-right: 28px;
+    margin-left:16px;
+    background: #0D0E13;
+    border-width:3px;
+    color: grey;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
