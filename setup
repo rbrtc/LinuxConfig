@@ -1,0 +1,16 @@
+#!/bin/bash
+
+sudo pacman -S --needed hyprland waybar uwsm udiskie ttf-roboto-mono-nerd \
+wl-clipboard wireplumber ttf-liberation nvim swaybg sudo-rs slurp grim sddm \
+rofi qt6ct qt5ct qt6-wayland qt5-wayland nwg-look noto-fonts noto-fonts-cjk \
+noto-fonts-emoji networkmanager network-manager-applet mpv pipewire libreoffice-fresh \
+kvantum-qt5 kvantum kitty kcolorchooser hyprpolkitagent hypridle hyprcursor hunspell \
+hunspell-en_us gwenview gnu-free-fonts ghostwriter firewalld dunst dolphin dhcpcd \
+copyq btop bash-completion xdg-user-dirs okular base-devel
+
+xdg-user-dirs-update
+
+mkdir -p "$HOME/Downloads/AUR/"
+git clone https://aur.archlinux.org/bibata-cursor-theme-bin.git "$HOME/Downloads/AUR/bibata-cursor"
+cd "$HOME/Downloads/AUR/bibata-cursor"
+makepkg -sirc
